@@ -1,0 +1,96 @@
+* {
+    background-color: bisque;
+    max-width: 300px;
+    margin: auto;
+}
+h1 {
+    padding-left: 4ex;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;   
+}
+li {
+    display: inline;
+    float: left;
+}
+li a {
+    text-decoration: none;
+    color: black;
+    padding: 11px 12px;
+    text-align: center;
+}
+.navi {
+    margin-top: 5px;
+    padding-bottom: 20px;
+}
+.navi a {
+    text-align: center;
+}
+table, th, td {
+    border:1px solid black;
+}
+.jedna {
+    background-color: yellow;
+}
+.dva {
+    background-color: blue;
+}
+.tri {
+    background-color: green;
+}
+.ctyri {
+    background-color: orange;
+}
+.pet {
+    background-color: purple;
+}
+.sest {
+    background-color:turquoise;
+}
+.sedm {
+    background-color:violet;
+}
+.osm {
+    background-color: white;
+}
+.devet {
+    background-color:crimson
+}
+.deset {
+    background-color: rosybrown;
+}
+.jedenact {
+    background-color: seagreen;
+}
+.dvanact {
+    background-color: sienna;
+}
+@media screen and (max-width: 600px) {
+    .navi a:not(:first-child) {display: none;}
+    .navi{
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .navi {position: relative;}
+    .navi {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navi.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+img {
+    max-width: 100%;  
+    height: auto;  
+}
